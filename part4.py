@@ -1,3 +1,4 @@
+4
 '''
 ******
 PART 4
@@ -12,4 +13,7 @@ Define a function possibletriangle that takes 3 arguments (side1, side2, side3).
 '''
 
 def possibletriangle(side1, side2, side3): #do not change this line
-  pass #delete the word pass when you start writing your code
+  if side1 + side2 > side3 and side1 + side3 > side2 and side3 + side2 > side1:
+    return True
+  else:
+    return False
